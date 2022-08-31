@@ -1,0 +1,31 @@
+{
+  "name": "naabu-action",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">   <img src=\"https://github.com/projectdiscovery/naabu/blob/master/static/naabu-logo.png\" alt=\"naabu\" width=\"200px\">   <br> </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx ncc build src/index.js --license licenses.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fguisso/naabu-action.git"
+  },
+  "keywords": [
+    "naabu"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fguisso/naabu-action/issues"
+  },
+  "homepage": "https://github.com/fguisso/naabu-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/tool-cache": "^2.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}
