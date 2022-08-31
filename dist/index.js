@@ -6840,7 +6840,7 @@ async function run() {
 		const binPath = await downloadAndInstall(version);
         const params = [];
 
-        if (list.length == 0 || host.length == 0) {
+        if (list.length != 0 && host.length != 0) {
             core.setFailed('You need to provide a host or a list of hosts to naabu.');
             return
         }
